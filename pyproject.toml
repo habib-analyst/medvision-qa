@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "medvision-qa"
+version = "0.1.0"
+description = "Medical image dataset quality auditor: corruption, duplicates, leakage, imbalance, label noise"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Habib Ur Rehman" }]
+dependencies = [
+    "numpy>=1.24",
+    "Pillow>=10.0",
+    "scikit-learn>=1.3",
+]
+
+[project.scripts]
+medvision-qa = "medvisionqa.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["medvisionqa*"]

@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+
+# pytest / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# demo artifacts
+demo_data/
+audit_report.md
+audit_report.json
